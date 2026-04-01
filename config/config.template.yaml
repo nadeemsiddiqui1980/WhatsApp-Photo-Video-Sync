@@ -1,0 +1,52 @@
+app:
+  poll_interval_seconds: ${POLL_INTERVAL_SECONDS}
+  temp_download_dir: ./state/temp_downloads
+  photos_root: ${LOCAL_PHOTOS_ROOT}
+  videos_root: ${LOCAL_VIDEOS_ROOT}
+  quarantine_dir: ./state/quarantine
+  log_dir: ./logs
+  log_max_bytes: 5242880
+  log_backup_count: 7
+  upload_max_retries: ${UPLOAD_MAX_RETRIES}
+  upload_retry_base_seconds: ${UPLOAD_RETRY_BASE_SECONDS}
+  upload_worker_count: ${UPLOAD_WORKER_COUNT}
+  upload_max_inflight: ${UPLOAD_MAX_INFLIGHT}
+  upload_batch_limit_per_cycle: ${UPLOAD_BATCH_LIMIT_PER_CYCLE}
+  delete_local_after_upload: ${DELETE_LOCAL_AFTER_UPLOAD}
+  cleanup_existing_uploaded_on_startup: ${CLEANUP_EXISTING_UPLOADED_ON_STARTUP}
+  change_history_file: ./state/change_history.jsonl
+  sqlite_db_file: ./state/pipeline.db
+
+whatsapp:
+  group_name: ${WHATSAPP_GROUP_NAME}
+  browser_profile_dir: ${BROWSER_PROFILE_DIR}
+  browser: ${WHATSAPP_BROWSER}
+  headless: false
+  startup_timeout_seconds: ${WHATSAPP_STARTUP_TIMEOUT_SECONDS}
+  download_timeout_seconds: ${WHATSAPP_DOWNLOAD_TIMEOUT_SECONDS}
+  message_scan_limit: 30
+
+sftp:
+  host: ${SFTP_HOST}
+  port: ${SFTP_PORT}
+  username: ${SFTP_USERNAME}
+  password: ${SFTP_PASSWORD}
+  remote_base: ${SFTP_REMOTE_BASE}
+  connect_timeout_seconds: 20
+
+filters:
+  image_extensions:
+    - .jpg
+    - .jpeg
+    - .png
+    - .webp
+  video_extensions:
+    - .mp4
+    - .mov
+    - .3gp
+    - .m4v
+    - .mkv
+    - .webm
+    - .avi
+    - .hevc
+    - .h265

@@ -1,0 +1,28 @@
+﻿{
+    "timestampUtc":  "2026-04-01T18:02:52.2864583Z",
+    "windows":  {
+                    "caption":  "Microsoft Windows 11 Home Single Language",
+                    "version":  "10.0.26200",
+                    "buildNumber":  "26200",
+                    "supported":  true
+                },
+    "tools":  {
+                  "python":  true,
+                  "winget":  true,
+                  "chocolatey":  true,
+                  "chrome":  true,
+                  "chromePath":  "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                  "edge":  true,
+                  "edgePath":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                  "supportedBrowser":  true
+              },
+    "checks":  [
+                   "Python OK: Python 3.14.3",
+                   "Chrome OK",
+                   "Edge OK"
+               ],
+    "network":  {
+                    "whatsapp443":  true,
+                    "sftp22":  false
+                }
+}
