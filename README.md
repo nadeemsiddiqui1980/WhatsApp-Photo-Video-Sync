@@ -1,11 +1,11 @@
-# Photo Sync (WhatsApp Group -> HostingRaja)
+# Photo Sync (WhatsApp Group -> SFTP)
 
 Zero-cost open-source automation for Windows 10/11.
 
 ## What this does
 - Collects new photos from one WhatsApp group (WhatsApp Web automation).
 - Organizes files as `photos/YYYY/MM/DD`.
-- Uploads to HostingRaja over SFTP.
+- Uploads to Your-SFTP over SFTP.
 - Tracks duplicates with SQLite.
 - Records change history in `state/change_history.jsonl`.
 - After WhatsApp QR authentication and valid SFTP credentials are in place, the service keeps running and polls for new photos every `POLL_INTERVAL_SECONDS`.
